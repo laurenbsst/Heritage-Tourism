@@ -1,0 +1,28 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+.welcome-text {
+    text-align: center;
+    margin-top: 50px;
+}
+a, a:hover, a:visited {
+    text-decoration: none;
+    color: black;
+}
+.home-button-title {
+    padding-top: 5px;
+}
+.home-button {
+    height: 150px;
+    width: 200px;
+    margin-bottom: 20px;
+}
+.home-columns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-main-content {
+    margin-top: 50px;
+}
