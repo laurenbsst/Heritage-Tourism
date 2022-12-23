@@ -1,0 +1,13 @@
+.site-gallery-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.gallery-image {
+    margin: 10px;
+}
+.gallery-subtitle {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

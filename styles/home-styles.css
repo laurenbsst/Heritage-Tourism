@@ -2,10 +2,6 @@ body, html {
     margin: 0;
     padding: 0;
 }
-.welcome-text {
-    text-align: center;
-    margin-top: 50px;
-}
 a, a:hover, a:visited {
     text-decoration: none;
     color: black;
@@ -17,6 +13,7 @@ a, a:hover, a:visited {
     height: 150px;
     width: 200px;
     margin-bottom: 20px;
+    border-radius: 5%;
 }
 .home-columns {
     display: flex;
