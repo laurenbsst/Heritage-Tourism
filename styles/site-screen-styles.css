@@ -1,0 +1,29 @@
+.container {
+    height: 100vh;
+}
+.image-container {
+    height: 200px;
+}
+.site-image {
+    width:100%;
+    max-height:100%;
+}
+.title-audio-player {
+    display: flex;
+    flex-direction: row;
+}
+.site-audio-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.site-audio {
+    width: 70%;
+    margin-top: 50px;
+}
+.site-information {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
