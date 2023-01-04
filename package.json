@@ -1,0 +1,24 @@
+{
+  "name": "heritage-tourism",
+  "version": "1.0.0",
+  "description": "A web-app allowing users to participate in guided tours of heritage sites in Norwich.",
+  "scripts": {
+    "devStart": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laurenbsst/Heritage-Tourism.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/laurenbsst/Heritage-Tourism/issues"
+  },
+  "homepage": "https://github.com/laurenbsst/Heritage-Tourism#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "mongoose": "^6.8.2"
+  }
+}
