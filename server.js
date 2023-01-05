@@ -7,6 +7,8 @@ const dotenv = require('dotenv');
 dotenv.config();
 
 app.use('/public', express.static('public'));
+app.use('/images', express.static('images'));
+
 
 app.set('view engine', 'ejs');
 
