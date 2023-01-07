@@ -16,9 +16,11 @@ mongoose.connect(`mongodb+srv://${process.env.MONGO_USERNAME}:${process.env.MONG
 
 const siteRouter = require('./routes/sites');
 const galleryRouter = require('./routes/gallery');
+const toursRouter = require('./routes/tours');
 
 app.use('/sites', siteRouter);
 app.use('/gallery', galleryRouter);
+app.use('/tours', toursRouter);
 
 app.get('/', (req, res) => {
     res.render('home');

@@ -1,0 +1,17 @@
+.time-text {
+    display: flex;
+    flex-direction: row;
+}
+.tour-time-icon {
+    padding-left: 5px;
+}
+.option-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+.tour-title {
+    margin-top: 20px;
+}
