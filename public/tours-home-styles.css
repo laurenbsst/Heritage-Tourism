@@ -3,15 +3,35 @@
     flex-direction: row;
 }
 .tour-time-icon {
-    padding-left: 5px;
-}
-.option-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 50px;
-    margin-left: 20px;
+    vertical-align: bottom;
+    font-size: 18px !important;
 }
 .tour-title {
     margin-top: 20px;
+}
+.tours-options-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.tours-options {
+    display: flex;
+    justify-content: center;
+}
+.card {
+    margin: 20px;
+    transition: 0.5s;
+}
+.card-img-top {
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+}
+.card:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+a, a:visited, a:active, a:hover {
+    text-decoration: none;
+    color: black;
 }
