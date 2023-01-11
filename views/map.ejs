@@ -20,9 +20,60 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANPJXyZnJG659k1QzEUfK3quG8aKjKrH8&callback=initMap">
+    </script>
+    <script src="../public/maps-frontend.js"></script>
     <title>Norwich Heritage Tours - Site Map</title>
 </head>
 <body>
-    
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">
+            <span class="material-icons back-arrow"> arrow_back_ios </span>
+          </a>
+          <a class="navbar-brand" href="/">
+            <img
+              src="/images/logo.png"
+              alt="Logo"
+              width="25"
+              height="30"
+              class="d-inline-block align-text-top"
+            />
+            Norwich Heritage Tours
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+              <a class="nav-link" href="/tours">Tours</a>
+              <a class="nav-link" href="/gallery">Gallery</a>
+              <a class="nav-link" href="/map">Map</a>
+              <a class="nav-link" href="/more">More</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="row title-text">
+            <h2>Norwich heritage site map</h2>
+        </div>
+        <div class="row subtitle-text">
+            <h3>Click on a point to learn more about each heritage site</h3>
+        </div>
+        <div class="col-12 mt-5 map-container">
+            <div id="map"></div>
+        </div>
+      </div>
 </body>
 </html>
