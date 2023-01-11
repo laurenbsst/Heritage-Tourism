@@ -17,10 +17,12 @@ mongoose.connect(`mongodb+srv://${process.env.MONGO_USERNAME}:${process.env.MONG
 const siteRouter = require('./routes/sites');
 const galleryRouter = require('./routes/gallery');
 const toursRouter = require('./routes/tours');
+const mapRouter = require('./routes/map');
 
 app.use('/sites', siteRouter);
 app.use('/gallery', galleryRouter);
 app.use('/tours', toursRouter);
+app.use('/map', mapRouter);
 
 app.get('/', (req, res) => {
     res.render('home');

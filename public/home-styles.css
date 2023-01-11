@@ -23,6 +23,8 @@ a, a:hover, a:visited {
 }
 .home-main-content {
     margin-top: 50px;
+    display: flex;
+    justify-content: center;
 }
 .card-img-top {
     width: 100%;
