@@ -12,8 +12,13 @@ function initMap(){
     const marker = new google.maps.Marker({
         position: norwich,
         map: map,
-        label: "1"
+        label: "1",
+        url: '/gallery/1',
       });
+
+    google.maps.event.addListener(marker, 'click', function() {
+        window.location.href = this.url;
+    });
 }
 
 window.initMap = initMap;

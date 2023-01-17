@@ -2,10 +2,14 @@ body, html {
     margin: 0;
     padding: 0;
     background-color: #FAF9F6;
+    font-family: 'Lexend', sans-serif;
 }
 a, a:hover, a:visited {
     text-decoration: none;
     color: black;
+}
+.home-subtitle {
+    margin-top: 20px;
 }
 .home-button-title {
     padding-top: 5px;

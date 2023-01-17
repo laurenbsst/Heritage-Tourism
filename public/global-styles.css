@@ -1,3 +1,6 @@
+html, body {
+    font-family: 'Lexend', sans-serif;
+}
 .title-text {
     text-align: center;
     margin-top: 50px;
@@ -8,4 +11,7 @@
 .subtitle-text {
     text-align: center;
     margin-top: 20px;
+}
+.nav-background {
+    background-color: #C3D6A0;
 }
