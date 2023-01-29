@@ -13,4 +13,12 @@ toursRouter.get('/public-buildings', (req, res) => {
     res.render('public-buildings');
 })
 
+toursRouter.get('/churches/rating', (req, res) => {
+    res.render('tour-rating');
+})
+
+toursRouter.get('/public-buildings/rating', (req, res) => {
+    res.render('tour-rating');
+})
+
 module.exports = toursRouter;

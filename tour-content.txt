@@ -1,0 +1,8 @@
+Public buildings tour:
+    1. castle
+    2. the guildhall
+    3. agricultural hall
+    4. city hall
+    5. the forum
+    6. central library (norfolk & norwich millenium library)
+    7. great hospital
