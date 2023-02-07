@@ -1,8 +1,18 @@
+Churches tour:
+    1. all saints' church
+    2. st peter mancroft
+    3. st stephen's
+    4. st andrews church
+    5. st benedict's
+    6. st laurence's
+    7. st margaret's
+    8. st gregory's
+
 Public buildings tour:
     1. castle
     2. the guildhall
-    3. agricultural hall
+    3. anglia house
     4. city hall
     5. the forum
-    6. central library (norfolk & norwich millenium library)
+    6. strangers' hall
     7. great hospital
