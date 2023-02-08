@@ -56,10 +56,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="#">Features</a>
-            <a class="nav-link" href="#">Pricing</a>
-            <a class="nav-link disabled">Disabled</a>
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+            <a class="nav-link" href="/tours-home">Tours</a>
+            <a class="nav-link" href="/gallery">Gallery</a>
+            <a class="nav-link" href="/map">Map</a>
+            <a class="nav-link" href="/more">More</a>
           </div>
         </div>
       </div>
@@ -67,10 +68,10 @@
     <div class="container">
       <div class="image-container">
         <img
-        src="../assets/images/norwich_castle.jpg"
-        class="img-fluid site-image"
+        src="../images/all-saints.jpg"
+        class="img-fluid gallery-image site-image"
         alt="Responsive image"
-        />
+      />
       </div>
       <div class="row">
         <h2 class="title-text"><%= site.siteName %></h2>
@@ -85,7 +86,6 @@
       </div>
       <div class="row site-information">
         <p><%= site.siteInfo %></p>
-        <p>In dictum libero id sapien tempor porttitor. Aenean orci diam, viverra eget vehicula sit amet, volutpat eu dolor. Aliquam erat volutpat. Integer neque quam, ultrices quis sodales vitae, egestas ut nulla. Nunc tellus neque, vulputate id semper nec, rutrum eget arcu. Donec ullamcorper semper dolor sodales egestas. Suspendisse magna elit, dapibus quis quam eget, euismod tincidunt ante. Praesent et cursus nibh, id fermentum augue. Fusce faucibus dolor at dolor pellentesque, nec luctus sapien euismod.</p>
       </div>
       <div class="row">
         <h3>Features on: <%= site.tours %></h3>

@@ -97,9 +97,7 @@ function initMap(){
       url: '/gallery/1',
     });
 
-
-
-    google.maps.event.addListener(marker, 'click', function() {
+    google.maps.event.addListener(theGreatHospital, 'click', function() {
         window.location.href = this.url;
     });
 }
