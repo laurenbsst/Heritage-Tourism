@@ -7,6 +7,25 @@ function initMap(){
 
     map = new google.maps.Map(document.getElementById("map"), options);
 
+    navigator.geolocation.watchPosition(successCallback, errorCallback, options);
+
+    function successCallback(position) {
+        const {latitude, longitude} = position.coords;
+
+        const userLocation = new google.maps.Marker({
+          position: {lat: latitude, lng: longitude},
+          map: map,
+          url: '/gallery/1',
+        })
+    }
+    function errorCallback(error){
+        console.log("Could not get the user's current location " + error);
+    }
+    var options = {
+        enableHighAccuracy: false,
+        timeout: 5000,
+    }
+
     const allSaintsChurch = new google.maps.Marker({
       position: {lat: 52.6259, lng: 1.2956},
       map: map,
