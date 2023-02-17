@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "A web-app allowing users to participate in guided tours of heritage sites in Norwich.",
   "scripts": {
-    "devStart": "nodemon server.js"
+    "devStart": "nodemon server.js",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
