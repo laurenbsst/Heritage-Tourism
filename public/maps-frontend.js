@@ -78,7 +78,7 @@ function initMap() {
   });
 
   const stMargaretsChurch = new google.maps.Marker({
-    position: { lat: 52.6775, lng: 1.224 },
+    position: { lat: 52.6315, lng: 1.2887 },
     map: map,
     url: "/gallery/1",
   });
