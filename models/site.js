@@ -5,10 +5,13 @@ const siteSchema = new mongoose.Schema({
     siteName: {
         type: String
     },
-    siteInfo: {
+    siteInfo1: {
         type: String
     },
-    moreInfo: {
+    siteInfo2: {
+        type: String
+    },
+    siteInfo3: {
         type: String
     },
     tours: {
