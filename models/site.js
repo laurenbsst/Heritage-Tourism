@@ -8,6 +8,9 @@ const siteSchema = new mongoose.Schema({
     siteInfo: {
         type: String
     },
+    moreInfo: {
+        type: String
+    },
     tours: {
         type: String
     },
