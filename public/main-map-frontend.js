@@ -47,19 +47,19 @@ function initMap() {
   const stPeterMancroftChurch = new google.maps.Marker({
     position: { lat: 52.6279, lng: 1.2925 },
     map: map,
-    url: "/gallery/1",
+    url: "/gallery/2",
   });
 
   const stStephensChurch = new google.maps.Marker({
     position: { lat: 52.6266, lng: 1.2922 },
     map: map,
-    url: "/gallery/1",
+    url: "/gallery/3",
   });
 
   const stAndrewsChurch = new google.maps.Marker({
     position: { lat: 52.6305, lng: 1.2955 },
     map: map,
-    url: "/gallery/1",
+    url: "/gallery/4",
   });
 
   const stBenedictsChurch = new google.maps.Marker({
@@ -129,7 +129,7 @@ function initMap() {
   });
 
   google.maps.event.addListener(theGreatHospital, "click", function () {
-    window.location.href = this.url;
+    this.window.location.href = this.url;
   });
 }
 
