@@ -56,7 +56,7 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
             <a class="nav-link active" aria-current="page" href="/">Home</a>
-            <a class="nav-link" href="/tours-home">Tours</a>
+            <a class="nav-link" href="/tours">Tours</a>
             <a class="nav-link" href="/gallery">Gallery</a>
             <a class="nav-link" href="/map">Map</a>
             <a class="nav-link" href="/more">More</a>
@@ -71,15 +71,34 @@
       <div class="row gallery-subtitle">
         <h3>Public Buildings</h3>
       </div>
+      <div class="modal fade" id="site-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog .modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Modal title</h5>
+              <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Modal body text goes here.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Save changes</button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="row">
         <div class="col-md-3 col-sm-6 col-6 site-gallery-images">
-          <a href="/gallery/1">
+          <button data-bs-toggle="modal" data-bs-target="#site-modal">
             <img
             src="https://storage.googleapis.com/heritage-tourism-store/norwich-castle.jpg"
             class="img-fluid gallery-image"
             alt="An image of the exterior of Norwich Castle."
           />
-          </a>
+        </button>
         </div>
         <div class="col-md-3 col-sm-6 col-6 site-gallery-images">
           <img

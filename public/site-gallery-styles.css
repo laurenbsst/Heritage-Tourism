@@ -14,3 +14,7 @@
 a:hover {
     cursor: pointer;
 }
+.site-gallery-images button {
+    border: none;
+    background-color: transparent;
+}
