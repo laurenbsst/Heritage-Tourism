@@ -23,11 +23,22 @@
 }
 .site-audio {
     width: 70%;
-    margin-top: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 .site-information {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+}
+ul {
+    list-style-type: none;
+    margin-top: 10px;
+}
+.days, .times {
+    display: table-cell;
+}
+.details-subtitle {
+    margin-top: 10px;
 }

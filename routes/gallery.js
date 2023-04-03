@@ -4,7 +4,7 @@ const Site = require('../models/site');
 
 galleryRouter.get('/', (req, res) => {
     res.render('site-gallery');
-})
+});
 
 galleryRouter.get('/:site_id', (req, res) => {
     const id = req.params.site_id;

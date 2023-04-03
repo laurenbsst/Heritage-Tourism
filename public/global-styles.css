@@ -15,3 +15,13 @@ html, body {
 .nav-background {
     background-color: #C3D6A0;
 }
+ul {
+    list-style-type: none;
+    margin-top: 10px;
+}
+.days, .times {
+    display: table-cell;
+}
+.details-subtitle {
+    margin-top: 10px;
+}

@@ -57,7 +57,7 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
             <a class="nav-link active" aria-current="page" href="/">Home</a>
-            <a class="nav-link" href="/tours-home">Tours</a>
+            <a class="nav-link" href="/tours">Tours</a>
             <a class="nav-link" href="/gallery">Gallery</a>
             <a class="nav-link" href="/map">Map</a>
             <a class="nav-link" href="/more">More</a>
@@ -94,9 +94,33 @@
         <p><%= site.siteInfo3 %></p>
       </div>
       <div class="row">
-        <h3>Features on: <%= site.tours %></h3>
-        <h3>(number) of metres away</h3>
-        <h3>*Opening times*</h3>
+        <h3 class="details-subtitle">Features on: <%= site.tours %></h3>
+        <h3 class="details-subtitle">(number) of metres away</h3>
+        <h3 class="details-subtitle">Opening times</h3>
+        <div class="opening-times">
+          <div class="days">
+            <ul>
+              <li>Monday:</li>
+              <li>Tuesday:</li>
+              <li>Wednesday:</li>
+              <li>Thursday:</li>
+              <li>Friday:</li>
+              <li>Saturday:</li>
+              <li>Sunday:</li>
+            </ul>
+          </div>
+          <div class="times">
+            <ul>
+              <li><%= site.monday %></li>
+              <li><%= site.tuesday %></li>
+              <li><%= site.wednesday %></li>
+              <li><%= site.thursday %></li>
+              <li><%= site.friday %></li>
+              <li><%= site.saturday %></li>
+              <li><%= site.sunday %></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
     <% }) %>
