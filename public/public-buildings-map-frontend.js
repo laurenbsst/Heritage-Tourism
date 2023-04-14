@@ -53,54 +53,72 @@ function initMap() {
   const theCastle = new google.maps.Marker({
     position: { lat: 52.6287, lng: 1.2962 },
     map: map,
-    url: "/gallery/1",
+    url: "/gallery/9",
     label: "1"
   });
 
   const angliaHouse = new google.maps.Marker({
     position: { lat: 52.6289, lng: 1.2984 },
     map: map,
-    url: "/gallery/1",
+    url: "/gallery/10",
     label: "2"
   });
 
   const cityHall = new google.maps.Marker({
     position: { lat: 52.6293, lng: 1.2979 },
     map: map,
-    url: "/gallery/1",
+    url: "/gallery/11",
     label: "3"
   });
 
   const theGuildhall = new google.maps.Marker({
     position: { lat: 52.6291, lng: 1.2924 },
     map: map,
-    url: "/gallery/1",
+    url: "/gallery/12",
     label: "4"
   });
 
   const theForum = new google.maps.Marker({
     position: { lat: 52.6278, lng: 1.2911 },
     map: map,
-    url: "/gallery/1",
+    url: "/gallery/13",
     label: "5"
   });
 
   const strangersHall = new google.maps.Marker({
     position: { lat: 52.6307, lng: 1.2925 },
     map: map,
-    url: "/gallery/1",
+    url: "/gallery/14",
     label: "6"
   });
 
   const theGreatHospital = new google.maps.Marker({
     position: { lat: 52.6327, lng: 1.3043 },
     map: map,
-    url: "/gallery/1",
+    url: "/gallery/15",
     label: "7"
   });
 
+  google.maps.event.addListener(theCastle, "click", function () {
+    location.href = this.url;
+  });
+  google.maps.event.addListener(angliaHouse, "click", function () {
+    location.href = this.url;
+  });
+  google.maps.event.addListener(cityHall, "click", function () {
+    location.href = this.url;
+  });
+  google.maps.event.addListener(theGuildhall, "click", function () {
+    location.href = this.url;
+  });
+  google.maps.event.addListener(theForum, "click", function () {
+    location.href = this.url;
+  });
+  google.maps.event.addListener(strangersHall, "click", function () {
+    location.href = this.url;
+  });
   google.maps.event.addListener(theGreatHospital, "click", function () {
-    window.location.href = this.url;
+    location.href = this.url;
   });
 }
 

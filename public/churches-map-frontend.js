@@ -60,54 +60,75 @@ function initMap() {
   const stStephensChurch = new google.maps.Marker({
     position: { lat: 52.6266, lng: 1.2922 },
     map: map,
-    url: "/gallery/1",
+    url: "/gallery/2",
     label: "2"
   });
 
   const stPeterMancroftChurch = new google.maps.Marker({
     position: { lat: 52.6279, lng: 1.2925 },
     map: map,
-    url: "/gallery/1",
+    url: "/gallery/3",
     label: "3"
   });
 
   const stAndrewsChurch = new google.maps.Marker({
     position: { lat: 52.6305, lng: 1.2955 },
     map: map,
-    url: "/gallery/1",
+    url: "/gallery/4",
     label: "4"
   });
 
   const stLaurencesChurch = new google.maps.Marker({
     position: { lat: 52.6311, lng: 1.2901 },
     map: map,
-    url: "/gallery/1",
+    url: "/gallery/5",
     label: "5"
   });
 
   const stMargaretsChurch = new google.maps.Marker({
     position: { lat: 52.6315, lng: 1.2887 },
     map: map,
-    url: "/gallery/1",
+    url: "/gallery/6",
     label: "6"
   });
 
   const stBenedictsChurch = new google.maps.Marker({
     position: { lat: 52.6312, lng: 1.2861 },
     map: map,
-    url: "/gallery/1",
+    url: "/gallery/7",
     label: "7"
   });
 
   const stGregorysChurch = new google.maps.Marker({
     position: { lat: 52.6303, lng: 1.2888 },
     map: map,
-    url: "/gallery/1",
+    url: "/gallery/8",
     label: "8"
   });
 
   google.maps.event.addListener(allSaintsChurch, "click", function () {
-    window.location.href = this.url;
+    location.href = this.url;
+  });
+  google.maps.event.addListener(stStephensChurch, "click", function () {
+    location.href = this.url;
+  });
+  google.maps.event.addListener(stPeterMancroftChurch, "click", function () {
+    location.href = this.url;
+  });
+  google.maps.event.addListener(stAndrewsChurch, "click", function () {
+    location.href = this.url;
+  });
+  google.maps.event.addListener(stLaurencesChurch, "click", function () {
+    location.href = this.url;
+  });
+  google.maps.event.addListener(stMargaretsChurch, "click", function () {
+    location.href = this.url;
+  });
+  google.maps.event.addListener(stBenedictsChurch, "click", function () {
+    location.href = this.url;
+  });
+  google.maps.event.addListener(stGregorysChurch, "click", function () {
+    location.href = this.url;
   });
 }
 
