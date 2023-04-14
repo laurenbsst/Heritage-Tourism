@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-var Int32 = require('mongoose-int32');
 
 const siteSchema = new mongoose.Schema({
     siteName: {
