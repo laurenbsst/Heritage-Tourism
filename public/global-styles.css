@@ -25,3 +25,16 @@ ul {
 .details-subtitle {
     margin-top: 10px;
 }
+.rating-btn {
+    background-color: #C3D6A0;
+    color: black;
+    border-color: #C3D6A0;
+    transition: 0.5s;
+}
+.rating-btn:hover {
+    background-color: #C3D6A0;
+    color: black;
+    border-color: #C3D6A0;
+    opacity: 0.5;
+
+}
