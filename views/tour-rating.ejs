@@ -57,84 +57,79 @@
       </nav>
       <div class="container">
         <div class="row title-text">
-            <h2>We hope you enjoyed our Norwich *name* tour</h2>
+            <h2 class="rating-title">We hope you enjoyed the tour!</h2>
             <h3 class="home-subtitle">Please rate your experience below to help us improve our tours.</h3>
           </div>
       </div>
-      <div class="row">
-        <form>
-          <div class="mb-3">
-            <label for="enjoymentRange" class="form-label">Did you enjoy the tour you participated with today?</label>
+      <div class="row form-container">
+        <div class="rating-form-container">
+          <form class="rating-form">
+            <label class="form-label">Did you enjoy the tour you participated with today?</label>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-              <label class="form-check-label" for="exampleRadios1">
-                I did not enjoy it
+              <input class="form-check-input" type="radio" name="enjoymentRadio" id="enjoymentRadio1" value="option1" checked>
+              <label class="form-check-label" for="enjoymentRadio1">
+                I enjoyed it
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-              <label class="form-check-label" for="exampleRadios2">
+              <input class="form-check-input" type="radio" name="enjoymentRadio" id="enjoymentRadio2" value="option2">
+              <label class="form-check-label" for="enjoymentRadio2">
                 Neutral
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-              <label class="form-check-label" for="exampleRadios3">
-                I enjoyed it
+              <input class="form-check-input" type="radio" name="enjoymentRadio" id="enjoymentRadio3" value="option3">
+              <label class="form-check-label" for="enjoymentRadio3">
+                I did not enjoy it
               </label>
             </div>
-            </div>
-          </div>
-          <div class="mb-3">
-            <label for="enjoymentRange" class="form-label">What are your thoughts on the length of the tour?</label>
+            <label class="form-label">What are your thoughts on the length of the tour you participated with?</label>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-              <label class="form-check-label" for="exampleRadios1">
+              <input class="form-check-input" type="radio" name="lengthRadio" id="lengthRadio1" value="option1" checked>
+              <label class="form-check-label" for="lengthRadio1">
                 It was too short
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-              <label class="form-check-label" for="exampleRadios2">
+              <input class="form-check-input" type="radio" name="lengthRadio" id="lengthRadio2" value="option2">
+              <label class="form-check-label" for="lengthRadio2">
                 It was a sufficient length
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-              <label class="form-check-label" for="exampleRadios3">
+              <input class="form-check-input" type="radio" name="lengthRadio" id="lengthRadio3" value="option3">
+              <label class="form-check-label" for="lengthRadio3">
                 It was too long
               </label>
             </div>
-            </div>
-          </div>
-          <div class="mb-3">
-            <label for="enjoymentRange" class="form-label">Do you think the map provided sufficient directions to each heritage site?</label>
+            <label class="form-label">Do you think the map provided sufficient directions to each heritage site?</label>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-              <label class="form-check-label" for="exampleRadios1">
-                The directions given were not sufficient
+              <input class="form-check-input" type="radio" name="directionRadio" id="directionRadio1" value="option1" checked>
+              <label class="form-check-label" for="directionRadio1">
+                The directions given were sufficient
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-              <label class="form-check-label" for="exampleRadios2">
+              <input class="form-check-input" type="radio" name="directionRadio" id="directionRadio2" value="option2">
+              <label class="form-check-label" for="directionRadio2">
                 Neutral
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-              <label class="form-check-label" for="exampleRadios3">
-                The directions given were sufficient
+              <input class="form-check-input" type="radio" name="directionRadio" id="directionRadio3" value="option3">
+              <label class="form-check-label" for="directionRadio3">
+                The directions given were not sufficient
               </label>
             </div>
+            <div class="form-group">
+              <label class="additional-feedback-label" for="additional-feedback">If you have any additional comments, please write them here.</label>
+              <textarea class="form-control" id="additional-feedback" rows="3"></textarea>
             </div>
-          </div>
-          <div class="form-floating">
-            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-            <label for="floatingTextarea">If you have any additional comments, please add them here</label>
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+            <div class="button-container">
+              <button type="submit" class="rating-btn submit-btn btn btn-primary">Submit</button>
+            </div>
+          </form>
+        </div>
       </div>
 </body>
 </html>
