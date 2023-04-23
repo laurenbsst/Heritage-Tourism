@@ -40,6 +40,9 @@ const siteSchema = new mongoose.Schema({
     sunday: {
         type: String
     },
+    image_link: {
+        type: String
+    }
 })
 
 module.exports = mongoose.model('Site', siteSchema);
