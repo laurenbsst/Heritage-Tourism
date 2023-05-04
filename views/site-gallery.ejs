@@ -24,6 +24,7 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+    <script src="/public/gallery-modal.js"></script>
     <title>Norwich Digital Heritage Tours - Site Gallery</title>
   </head>
   <body>
@@ -75,16 +76,24 @@
         <div class="modal-dialog .modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title">Modal title</h5>
+              <h5 class="modal-title" id="modal-title">Modal title</h5>
               <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
             <div class="modal-body">
-              <p>Modal body text goes here.</p>
+              <img
+              id="modal-image"
+              src="../images/norwich-castle.jpg"
+              class="img-fluid gallery-image site-image"
+              alt="Responsive image"
+            />
+              <p id="modal-info-text">Modal body text goes here.</p>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-primary">Save changes</button>
+              <a href="/gallery/1" id="learn-more-link">
+              <button type="button" class="btn btn-primary learn-more-btn">Learn more</button>
+              </a>
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
             </div>
           </div>
@@ -92,7 +101,7 @@
       </div>
       <div class="row">
         <div class="col-md-3 col-sm-6 col-6 site-gallery-images">
-          <button id="9" data-bs-toggle="modal" data-bs-target="#site-modal">
+          <button id="9" onclick="showPreview(this.id)" data-bs-toggle="modal" data-bs-target="#site-modal">
             <img
             src="https://storage.googleapis.com/heritage-tourism-store/norwich-castle.jpg"
             class="img-fluid gallery-image"
@@ -101,53 +110,58 @@
         </button>
         </div>
         <div class="col-md-3 col-sm-6 col-6 site-gallery-images">
+          <button id="10" onclick="showPreview(this.id)" data-bs-toggle="modal" data-bs-target="#site-modal">
           <img
             src="https://storage.googleapis.com/heritage-tourism-store/norwich-guildhall.jpg"
             class="img-fluid gallery-image"
             alt="An image of the exterior of The Guildhall."
           />
+          </button>
         </div>
         <div class="col-md-3 col-sm-6 col-6 site-gallery-images">
+          <button id="11" onclick="showPreview(this.id)" data-bs-toggle="modal" data-bs-target="#site-modal">
           <img
             src="https://storage.googleapis.com/heritage-tourism-store/norwich-anglia-house.jpg"
             class="img-fluid gallery-image"
             alt="An image of the exterior of Anglia House."
           />
+        </button>
         </div>
         <div class="col-md-3 col-sm-6 col-6 site-gallery-images">
+          <button id="12" onclick="showPreview(this.id)" data-bs-toggle="modal" data-bs-target="#site-modal">
           <img
             src="https://storage.googleapis.com/heritage-tourism-store/norwich-city-hall.jpg"
             class="img-fluid gallery-image"
             alt="An image of the exterior of City Hall at night."
           />
+        </button>
         </div>
         <div class="col-md-3 col-sm-6 col-6 site-gallery-images">
+          <button id="13" onclick="showPreview(this.id)" data-bs-toggle="modal" data-bs-target="#site-modal">
           <img
             src="https://storage.googleapis.com/heritage-tourism-store/norwich-the-forum.jpg"
             class="img-fluid gallery-image"
             alt="An image of the exterior of The Forum."
           />
+          </button>
         </div>
         <div class="col-md-3 col-sm-6 col-6 site-gallery-images">
+          <button id="14" onclick="showPreview(this.id)" data-bs-toggle="modal" data-bs-target="#site-modal">
           <img
             src="https://storage.googleapis.com/heritage-tourism-store/norwich-strangers-hall.jpg"
             class="img-fluid gallery-image"
             alt="An image of the exterior of Strangers' Hall."
           />
+        </button>
         </div>
         <div class="col-md-3 col-sm-6 col-6 site-gallery-images">
+          <button id="15" onclick="showPreview(this.id)" data-bs-toggle="modal" data-bs-target="#site-modal">
           <img
             src="https://storage.googleapis.com/heritage-tourism-store/norwich-great-hospital.jpg"
             class="img-fluid gallery-image"
             alt="An image of the exterior of the buildings at The Great Hospital."
           />
-        </div>
-        <div class="col-md-3 col-sm-6 col-6 site-gallery-images">
-          <img
-            src="https://storage.googleapis.com/heritage-tourism-store/norwich-strangers-hall.jpg"
-            class="img-fluid gallery-image"
-            alt="Responsive image"
-          />
+        </button>
         </div>
       </div>
       <div class="row gallery-subtitle">
@@ -155,53 +169,76 @@
       </div>
       <div class="row">
         <div class="col-md-3 col-sm-6 col-6 site-gallery-images">
+          <button id="1" onclick="showPreview(this.id)" data-bs-toggle="modal" data-bs-target="#site-modal">
           <img
             src="https://storage.googleapis.com/heritage-tourism-store/norwich-all-saints-church.jpg"
             class="img-fluid gallery-image"
             alt="An image of the exterior view of All Saint's Church."
           />
+          </button>
         </div>
         <div class="col-md-3 col-sm-6 col-6 site-gallery-images">
+          <button id="2" onclick="showPreview(this.id)" data-bs-toggle="modal" data-bs-target="#site-modal">
           <img
             src="https://storage.googleapis.com/heritage-tourism-store/norwich-peter-mancroft.jpg"
             class="img-fluid gallery-image"
             alt="An image of the exterior view of St Peter Mancroft Church."
           />
+          </button>
         </div>
         <div class="col-md-3 col-sm-6 col-6 site-gallery-images">
+          <button id="3" onclick="showPreview(this.id)" data-bs-toggle="modal" data-bs-target="#site-modal">
           <img
             src="https://storage.googleapis.com/heritage-tourism-store/norwich-st-stephens.jpg"
             class="img-fluid gallery-image"
             alt="An image of the exterior view of St Stephen's Church."
           />
+          </button>
         </div>
         <div class="col-md-3 col-sm-6 col-6 site-gallery-images">
+          <button id="4" onclick="showPreview(this.id)" data-bs-toggle="modal" data-bs-target="#site-modal">
           <img
             src="https://storage.googleapis.com/heritage-tourism-store/norwich-st-andrews.jpg"
             class="img-fluid gallery-image"
             alt="An image of the exterior view of St Andrew's Church."
           />
+          </button>
         </div>
         <div class="col-md-3 col-sm-6 col-6 site-gallery-images">
+          <button id="5" onclick="showPreview(this.id)" data-bs-toggle="modal" data-bs-target="#site-modal">
           <img
             src="https://storage.googleapis.com/heritage-tourism-store/norwich-st-benedicts.jpg"
             class="img-fluid gallery-image"
             alt="An image of the last existing tower of St Benedict's Church"
           />
+          </button>
         </div>
         <div class="col-md-3 col-sm-6 col-6 site-gallery-images">
+          <button id="6" onclick="showPreview(this.id)" data-bs-toggle="modal" data-bs-target="#site-modal">
           <img
             src="https://storage.googleapis.com/heritage-tourism-store/norwich-st-laurences.jpg"
             class="img-fluid gallery-image"
             alt="An image of the exterior view of St Laurence's Church"
           />
+          </button>
         </div>
         <div class="col-md-3 col-sm-6 col-6 site-gallery-images">
+          <button id="7" onclick="showPreview(this.id)" data-bs-toggle="modal" data-bs-target="#site-modal">
+          <img
+            src="https://storage.googleapis.com/heritage-tourism-store/st%20margarets%20church%20of%20art.jpg"
+            class="img-fluid gallery-image"
+            alt="An image of the interior view of St Margaret's Church"
+          />
+          </button>
+        </div>
+        <div class="col-md-3 col-sm-6 col-6 site-gallery-images">
+          <button id="8" onclick="showPreview(this.id)" data-bs-toggle="modal" data-bs-target="#site-modal">
           <img
             src="https://storage.googleapis.com/heritage-tourism-store/norwich-st-gregorys.jpg"
             class="img-fluid gallery-image"
             alt="An image of the exterior view of St Gregory's Church"
           />
+          </button>
         </div>
       </div>
     </div>

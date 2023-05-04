@@ -6,6 +6,10 @@
 }
 .gallery-image {
     margin-bottom: 20px;
+    transition: 0.5s;
+}
+.gallery-image:hover {
+    opacity: 0.7;
 }
 .gallery-subtitle {
     margin-top: 20px;
@@ -17,4 +21,22 @@ a:hover {
 .site-gallery-images button {
     border: none;
     background-color: transparent;
+}
+.learn-more-btn {
+    background-color: #C3D6A0;
+    color: black;
+    border-color: #C3D6A0;
+    transition: 0.5s
+}
+.learn-more-btn:active {
+    background-color: #C3D6A0;
+    color: black;
+    border-color: #C3D6A0;
+    transition: 0.5s
+}
+.learn-more-btn:hover {
+    background-color: #C3D6A0;
+    color: black;
+    border-color: #C3D6A0;
+    opacity: 0.7;
 }
