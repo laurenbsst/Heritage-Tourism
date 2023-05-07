@@ -42,6 +42,9 @@ const siteSchema = new mongoose.Schema({
     },
     image_link: {
         type: String
+    },
+    audio_link: {
+        type: String
     }
 })
 
