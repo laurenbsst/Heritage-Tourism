@@ -1,8 +1,7 @@
 function initMap() {
   var options = {
     center: { lat: 52.6291, lng: 1.2924 },
-    zoom: 15,
-    timeout: 5000,
+    zoom: 15
   };
 
   map = new google.maps.Map(document.getElementById("map"), options);
@@ -19,9 +18,8 @@ function initMap() {
 }
 
   var locationMarker = null;
-
-  function autoUpdate() {
-    navigator.geolocation.watchPosition(
+  
+  navigator.geolocation.watchPosition(
       function (position) {
         var newPoint = new google.maps.LatLng(
           position.coords.latitude,
@@ -47,8 +45,6 @@ function initMap() {
     function errorHandler() {
       console.log("Location tracking failed");
     }
-  }
-  autoUpdate();
   
   const allSaintsChurch = new google.maps.Marker({
     position: { lat: 52.6259, lng: 1.2956 },
