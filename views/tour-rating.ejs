@@ -1,135 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Bootstrap CDN -->
     <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-    crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
     />
-    <link href= "/public/rating-styles.css" rel="stylesheet" type="text/css" />
-    <link href= "/public/global-styles.css" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+    <link href="/public/rating-styles.css" rel="stylesheet" type="text/css" />
+    <link href="/public/global-styles.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
     <title>Norwich Digital Heritage Tours - Rate the Tour</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav class="navbar navbar-expand-lg nav-background">
-        <div class="container-fluid">
-          <span class="material-icons back-arrow"> arrow_back_ios </span>
-          <a class="navbar-brand norwich-dht" href="/">
-            <img src="/images/logo.png" alt="Logo" width="25" height="30" class="d-inline-block align-text-top">
-            Norwich Digital Heritage Tours
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+      <div class="container-fluid">
+        <span class="material-icons back-arrow"> arrow_back_ios </span>
+        <a class="navbar-brand norwich-dht" href="/">
+          <img
+            src="/images/logo.png"
+            alt="Logo"
+            width="25"
+            height="30"
+            class="d-inline-block align-text-top"
+          />
+          Norwich Digital Heritage Tours
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="/tours">Tours</a>
+            <a class="nav-link" href="/gallery">Gallery</a>
+            <a class="nav-link" href="/map">Map</a>
+            <a class="nav-link" href="/more">More</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row title-text">
+        <h2 class="rating-title">We hope you enjoyed the tour!</h2>
+        <h3 class="home-subtitle">
+          Please rate your experience below to help us improve our tours.
+        </h3>
+      </div>
+    </div>
+    <div class="row form-container">
+      <div class="rating-form-container">
+        <form class="rating-form" action="/tours" method="post">
+          <label class="form-label"
+            >Which tour would you like to leave a rating for?</label
           >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-              <a class="nav-link" href="/tours">Tours</a>
-              <a class="nav-link" href="/gallery">Gallery</a>
-              <a class="nav-link" href="/map">Map</a>
-              <a class="nav-link" href="/more">More</a>
-            </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="tour"
+              id="church"
+              value="Churches"
+              checked
+            />
+            <label class="form-check-label" for="churchRadio">Churches</label>
           </div>
-        </div>
-      </nav>
-      <div class="container">
-        <div class="row title-text">
-            <h2 class="rating-title">We hope you enjoyed the tour!</h2>
-            <h3 class="home-subtitle">Please rate your experience below to help us improve our tours.</h3>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="tour"
+              id="public"
+              value="Public Buildings"
+            />
+            <label class="form-check-label" for="public"
+              >Public Buildings</label
+            >
           </div>
+          <label class="form-label"
+            >Did you enjoy the tour you participated with today?</label
+          >
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="enjoyment"
+              id="enjoyment_positive"
+              value="I enjoyed it"
+              checked
+            />
+            <label class="form-check-label" for="enjoyment_positive"
+              >I enjoyed it</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="enjoyment"
+              id="enjoyment_neutral"
+              value="Neutral"
+            />
+            <label class="form-check-label" for="enjoyment_neutral"
+              >Neutral</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="enjoyment"
+              id="enjoyment_negative"
+              value="I did not enjoy it"
+            />
+            <label class="form-check-label" for="enjoyment_negative"
+              >I did not enjoy it</label
+            >
+          </div>
+          <label class="form-label"
+            >Do you think that the interactive features of this website (e.g.
+            the map, audio recordings) made it easier to engage with the
+            information?</label
+          >
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="interactive"
+              id="interactive_positive"
+              value="It made it easier"
+              checked
+            />
+            <label class="form-check-label" for="interactive_positive">
+              It made it easier
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="interactive"
+              id="interactive_neutral"
+              value="Neutral"
+            />
+            <label class="form-check-label" for="interactive_neutral">
+              Neutral
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="interactive"
+              id="interactive_negative"
+              value="It didn't make it easier"
+            />
+            <label class="form-check-label" for="interactive_negative">
+              It didn't make it easier
+            </label>
+          </div>
+          <label class="form-label"
+            >Do you think the map provided sufficient directions to each
+            heritage site?</label
+          >
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="direction"
+              id="direction_positive"
+              value="The directions given were sufficient"
+              checked
+            />
+            <label class="form-check-label" for="direction_positive">
+              The directions given were sufficient
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="direction"
+              id="direction_neutral"
+              value="Neutral"
+            />
+            <label class="form-check-label" for="direction_neutral">
+              Neutral
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="direction"
+              id="direction_negative"
+              value="The directions given were not sufficient"
+            />
+            <label class="form-check-label" for="direction_negative">
+              The directions given were not sufficient
+            </label>
+          </div>
+          <div class="form-group">
+            <label class="additional-feedback-label" for="additional_feedback"
+              >If you have any additional comments, please write them here.
+              (optional)</label
+            >
+            <textarea
+              class="form-control"
+              name="additional_feedback"
+              id="additional_feedback"
+              rows="3"
+            ></textarea>
+          </div>
+          <div class="button-container">
+            <button type="submit" class="rating-btn submit-btn btn btn-primary">
+              Submit
+            </button>
+          </div>
+        </form>
       </div>
-      <div class="row form-container">
-        <div class="rating-form-container">
-          <form class="rating-form">
-            <label class="form-label">Did you enjoy the tour you participated with today?</label>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="enjoymentRadio" id="enjoymentRadio1" value="option1" checked>
-              <label class="form-check-label" for="enjoymentRadio1">
-                I enjoyed it
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="enjoymentRadio" id="enjoymentRadio2" value="option2">
-              <label class="form-check-label" for="enjoymentRadio2">
-                Neutral
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="enjoymentRadio" id="enjoymentRadio3" value="option3">
-              <label class="form-check-label" for="enjoymentRadio3">
-                I did not enjoy it
-              </label>
-            </div>
-            <label class="form-label">What are your thoughts on the length of the tour you participated with?</label>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="lengthRadio" id="lengthRadio1" value="option1" checked>
-              <label class="form-check-label" for="lengthRadio1">
-                It was too short
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="lengthRadio" id="lengthRadio2" value="option2">
-              <label class="form-check-label" for="lengthRadio2">
-                It was a sufficient length
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="lengthRadio" id="lengthRadio3" value="option3">
-              <label class="form-check-label" for="lengthRadio3">
-                It was too long
-              </label>
-            </div>
-            <label class="form-label">Do you think the map provided sufficient directions to each heritage site?</label>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="directionRadio" id="directionRadio1" value="option1" checked>
-              <label class="form-check-label" for="directionRadio1">
-                The directions given were sufficient
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="directionRadio" id="directionRadio2" value="option2">
-              <label class="form-check-label" for="directionRadio2">
-                Neutral
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="directionRadio" id="directionRadio3" value="option3">
-              <label class="form-check-label" for="directionRadio3">
-                The directions given were not sufficient
-              </label>
-            </div>
-            <div class="form-group">
-              <label class="additional-feedback-label" for="additional-feedback">If you have any additional comments, please write them here.</label>
-              <textarea class="form-control" id="additional-feedback" rows="3"></textarea>
-            </div>
-            <div class="button-container">
-              <button type="submit" class="rating-btn submit-btn btn btn-primary">Submit</button>
-            </div>
-          </form>
-        </div>
-      </div>
-</body>
+    </div>
+  </body>
 </html>
