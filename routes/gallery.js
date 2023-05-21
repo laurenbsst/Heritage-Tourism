@@ -9,7 +9,6 @@ galleryRouter.get('/', (req, res) => {
 galleryRouter.get('/:site_id', (req, res) => {
     const id = req.params.site_id;
     Site.find({site_id: id}, function (err, foundSite){
-        console.log(foundSite);
         res.render('site-screen', {
             sites: foundSite
         })

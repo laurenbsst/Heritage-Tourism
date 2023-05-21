@@ -21,15 +21,17 @@ const siteRouter = require('./routes/sites');
 const galleryRouter = require('./routes/gallery');
 const toursRouter = require('./routes/tours');
 const mapRouter = require('./routes/map');
+const moreRouter = require('./routes/more');
 
 app.use('/sites', siteRouter);
 app.use('/gallery', galleryRouter);
 app.use('/tours', toursRouter);
 app.use('/map', mapRouter);
+app.use('/more', moreRouter);
 
 app.get('/', (req, res) => {
     res.render('home');
 })
-app.listen(process.env.PORT || 5000, () => {
+module.exports = app.listen(process.env.PORT || 5000, () => {
     console.log('Server is running on port 5000');
 });

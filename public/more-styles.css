@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.toggle-btn {
+    width: 70px;
+    height: 30px;
+    background-color: gray;
+    border-radius: 30px;
+    padding: 5px;
+    transition: all .3s ease-in-out;
+}
+.toggle-btn > .inner-circle {
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: all 300ms ease-in-out;
+}
+.toggle-btn.active {
+    background-color: #C3D6A0;
+}
+.toggle-btn.active > .inner-circle {
+    margin-left: 40px;
+}
+ul {
+    display: flex;
+    align-items: center;
+}
+li {
+    display: inline-block;
+}
