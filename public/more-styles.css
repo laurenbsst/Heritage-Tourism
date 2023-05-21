@@ -10,6 +10,7 @@
     background-color: gray;
     border-radius: 30px;
     padding: 5px;
+    margin-left: 10px;
     transition: all .3s ease-in-out;
 }
 .toggle-btn > .inner-circle {
@@ -28,6 +29,7 @@
 ul {
     display: flex;
     align-items: center;
+    margin-top: 40px;
 }
 li {
     display: inline-block;
