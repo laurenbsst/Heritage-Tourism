@@ -1,6 +1,10 @@
 html, body {
     font-family: 'Lexend', sans-serif;
 }
+a, a:hover, a:visited {
+    text-decoration: none;
+    color: black;
+}
 .title-text {
     text-align: center;
     margin-top: 50px;
