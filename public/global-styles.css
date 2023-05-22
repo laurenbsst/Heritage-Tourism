@@ -1,5 +1,6 @@
 html, body {
     font-family: 'Lexend', sans-serif;
+    overflow: scroll;
 }
 a, a:hover, a:visited {
     text-decoration: none;

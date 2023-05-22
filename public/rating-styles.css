@@ -1,38 +1,38 @@
 .form-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .rating-form-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .rating-form {
-    margin-left: 10px;
-    flex-direction: column;
-    display: flex;
-    margin-bottom: 20px;
+  margin-left: 10px;
+  flex-direction: column;
+  display: flex;
+  margin-bottom: 20px;
 }
 .form-label {
-    margin-bottom: 20px;
-    margin-top: 40px;
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 .form-group {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 .submit-btn {
-    margin-top: 40px;
-    width: 200px;
+  margin-top: 40px;
+  width: 200px;
 }
 .button-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .additional-feedback-label {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 .rating-title {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }

@@ -3,7 +3,6 @@ const mongoose = require('mongoose');
 mongoose.set('strictQuery', true);
 const app = express();
 const dotenv = require('dotenv');
-const bodyParser = require('body-parser');
 
 app.use(express.urlencoded({extended: false}))
 
